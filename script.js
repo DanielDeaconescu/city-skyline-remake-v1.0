@@ -9,6 +9,7 @@ let overlay2 = document.querySelector(".overlay2");
 let theMoon = document.querySelector(".moon-make");
 let theSun = document.querySelector(".sun-make");
 let theBody = document.querySelector("body");
+let theCloud = document.querySelector(".overlay-cloud");
 
 // Changing the background color of every part of every building
 // Selecting every part of every building
@@ -148,6 +149,9 @@ function functionDay() {
   //   Adding a blue background on the body during the day
 
   theBody.style.backgroundColor = "var(--sky-color)";
+
+  //   Changing the opacity of the clouds during the day
+  theCloud.style.opacity = "1";
 }
 
 function functionNight() {
@@ -230,4 +234,7 @@ function functionNight() {
   //   Changint the background during the night
 
   theBody.style.backgroundColor = "var(--whole-background)";
+
+  //   Changing the opacity of the clouds during the night
+  theCloud.style.opacity = "0.7";
 }
